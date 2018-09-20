@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/phillipchan2/rio-hondo-accounting/issues"
   },
-  "homepage": "https://github.com/phillipchan2/rio-hondo-accounting#readme"
+  "homepage": "https://github.com/phillipchan2/rio-hondo-accounting#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.1",
+    "run-sequence": "^2.2.1"
+  }
 }
