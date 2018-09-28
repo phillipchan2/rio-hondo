@@ -21,7 +21,7 @@ gulp.task('js', () => {
 		.pipe(
 			minify({
 				ext: {
-					min: '-min.js'
+					min: '.min.js'
 				},
 				noSource: true,
 				exclude: ['tasks'],

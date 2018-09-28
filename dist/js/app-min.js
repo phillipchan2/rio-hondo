@@ -1,1 +1,0 @@
-function shout(){console.log("nothing")}console.log("hi");
