@@ -8,7 +8,7 @@ const sass = require('gulp-sass');
 
 gulp.task('sass', () => {
 	return gulp
-		.src('src/**/*.scss')
+		.src('src/styles/app.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(concat('app.min.css'))
 		.pipe(cleanCSS({ compatibility: 'ie8' }))

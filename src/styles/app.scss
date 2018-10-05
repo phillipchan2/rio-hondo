@@ -1,3 +1,10 @@
 .accounting {
-	background: blue;
+	@import './variables';
+
+	// global
+	@import './utilities';
+	@import './typography';
+
+	// components
+	@import './components/card';
 }
