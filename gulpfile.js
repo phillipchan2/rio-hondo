@@ -1,6 +1,7 @@
 const concat = require('gulp-concat');
 const cleanCSS = require('gulp-clean-css');
 const gulp = require('gulp');
+const babel = require('gulp-babel');
 const minify = require('gulp-minify');
 const insert = require('gulp-insert');
 const htmlmin = require('gulp-htmlmin');
@@ -22,6 +23,11 @@ gulp.task('js', () => {
 	return gulp
 		.src(['src/**/*.js'])
 		.pipe(
+			babel({
+				presets: ['@babel/env']
+			})
+		)
+		.pipe(
 			minify({
 				ext: {
 					min: '.min.js'
@@ -40,13 +46,10 @@ gulp.task('pages', () => {
 		.pipe(
 			insert.prepend(`<!-- inject-style src="./dist/css/app.min.css" -->`)
 		)
+		.pipe(insert.prepend(`<script src="./dist/js/app.min.js"></script>`))
 		.pipe(styleInject())
-		.pipe(
-			injectScripts({
-				baseDir: './'
-			})
-		)
-		.pipe(htmlmin())
+		.pipe(injectScripts({ baseDir: './' }))
+		.pipe(htmlmin({ collapseWhitespace: true }))
 		.pipe(gulp.dest('dist/pages'));
 });
 
