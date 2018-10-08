@@ -2,8 +2,11 @@ const concat = require('gulp-concat');
 const cleanCSS = require('gulp-clean-css');
 const gulp = require('gulp');
 const minify = require('gulp-minify');
+const insert = require('gulp-insert');
 const htmlmin = require('gulp-htmlmin');
 const runSequence = require('run-sequence');
+const styleInject = require('gulp-style-inject');
+const injectScripts = require('gulp-inject-scripts');
 const sass = require('gulp-sass');
 
 gulp.task('sass', () => {
@@ -34,7 +37,16 @@ gulp.task('js', () => {
 gulp.task('pages', () => {
 	return gulp
 		.src('src/pages/**/*html')
-		.pipe(htmlmin({ collapseWhitespace: true, minifyCSS: true }))
+		.pipe(
+			insert.prepend(`<!-- inject-style src="./dist/css/app.min.css" -->`)
+		)
+		.pipe(styleInject())
+		.pipe(
+			injectScripts({
+				baseDir: './'
+			})
+		)
+		.pipe(htmlmin())
 		.pipe(gulp.dest('dist/pages'));
 });
 
@@ -46,7 +58,7 @@ gulp.task('watch', () => {
 	});
 
 	gulp.watch(['src/**/*.js'], () => {
-		runSequence('js');
+		runSequence('js', 'pages');
 	});
 });
 
