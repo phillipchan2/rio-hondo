@@ -66,5 +66,5 @@ gulp.task('watch', () => {
 });
 
 gulp.task('default', function(callback) {
-	runSequence('sass', 'pages', 'watch');
+	runSequence('sass', 'js', 'pages', 'watch');
 });
