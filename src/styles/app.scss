@@ -1,3 +1,7 @@
+.entry-title {
+	display: none;
+}
+
 .accounting {
 	@import './variables';
 
@@ -7,4 +11,5 @@
 
 	// components
 	@import './components/card';
+	@import './components/statistic';
 }
