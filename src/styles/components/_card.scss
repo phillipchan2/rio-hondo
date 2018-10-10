@@ -1,6 +1,7 @@
 .card {
 	background: #fff;
-	box-shadow: 0 0 1em rgba(0, 0, 0, 0.15);
+	border-radius: $borderRadius;
+	box-shadow: 0 0 2em rgba(0, 0, 0, 0.08);
 	box-sizing: border-box;
 	padding: 1em;
 
@@ -18,5 +19,9 @@
 		font-weight: bold;
 		margin-bottom: 1em;
 		font-size: 23px;
+	}
+
+	button {
+		width: 100%;
 	}
 }

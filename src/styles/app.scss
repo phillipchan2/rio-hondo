@@ -1,5 +1,17 @@
+// global
 .entry-title {
 	display: none;
+}
+
+article.type-page {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		color: #6e6e6e;
+		font-weight: bold;
+	}
 }
 
 .accounting {
@@ -10,6 +22,8 @@
 	@import './typography';
 
 	// components
+	@import './components/components';
 	@import './components/card';
+	@import './components/media_section';
 	@import './components/statistic';
 }
