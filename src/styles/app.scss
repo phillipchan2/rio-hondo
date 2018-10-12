@@ -23,8 +23,11 @@ article.type-page {
 
 	// components
 	@import './components/components';
+
 	@import './components/card';
+	@import './components/feature_list';
+	@import './components/industry_links';
+	@import './components/links_container';
 	@import './components/media_section';
 	@import './components/statistic';
-	@import './components/industry_links';
 }
