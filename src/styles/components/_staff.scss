@@ -1,0 +1,70 @@
+.staff-collection {
+	display: flex;
+
+	.staff-padding-container {
+		padding: 0.5em;
+		box-sizing: border-box;
+		width: 50%;
+	}
+
+	.staff {
+		width: 100%;
+		height: 350px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 1em;
+		background-size: cover;
+		background-repeat: none;
+		border-radius: $borderRadius;
+
+		&.full-time {
+		}
+
+		&.part-time {
+			header {
+				color: #fff;
+
+				.position {
+					color: rgba(255, 255, 255, 0.8);
+				}
+			}
+		}
+
+		header {
+			color: #1f1f1f;
+
+			.name {
+				font-size: 19.25px;
+				line-height: 28px;
+				font-weight: bold;
+			}
+
+			.position {
+				font-size: 11px;
+			}
+		}
+
+		.staff-bio {
+			opacity: 0.2;
+			// visibility: hidden;
+			height: 250px;
+			overflow: scroll;
+		}
+
+		footer {
+			display: flex;
+			justify-content: space-between;
+			font-weight: bold;
+			font-size: 13px;
+
+			aside:hover {
+				cursor: pointer;
+			}
+
+			.read-bio-container {
+				color: #fdc331;
+			}
+		}
+	}
+}
