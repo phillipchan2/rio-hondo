@@ -3,7 +3,7 @@
 // read bio
 document.querySelectorAll('.read-bio-container').forEach(function(elem) {
 	elem.addEventListener('click', function(e) {
-		var staffContainer = e.target.parentNode.parentNode;
+		var staffContainer = e.target.parentNode.parentNode.parentNode;
 		var toggleClassName = 'read-bio-active';
 
 		if (!staffContainer.classList.contains(toggleClassName)) {
