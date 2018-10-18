@@ -10,6 +10,10 @@
 	}
 }
 
+.flex-column {
+	flex-direction: column;
+}
+
 .section-padding {
 	padding: 2em 0;
 }
@@ -26,8 +30,16 @@
 	padding: 1em;
 }
 
+.standard-padding-vertical {
+	padding: 1em 0;
+}
+
 .standard-padding-large {
 	padding: 3em;
+}
+
+.text-center {
+	text-align: center;
 }
 
 .w10 {

@@ -17,6 +17,10 @@
 	}
 }
 
+.bleed-section {
+	width: calc(100% + 130px);
+}
+
 .position-container {
 	font-size: 15.75px;
 	line-height: 2em;
@@ -24,6 +28,10 @@
 
 	.name {
 		font-weight: bold;
+	}
+
+	p {
+		margin-bottom: 0;
 	}
 }
 
