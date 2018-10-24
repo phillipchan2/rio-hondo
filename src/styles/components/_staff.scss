@@ -1,5 +1,6 @@
 .staff-collection {
 	display: flex;
+	flex-wrap: wrap;
 
 	.staff-padding-container {
 		padding: 1em 1em 0 0;
@@ -9,7 +10,7 @@
 
 	.staff {
 		background-repeat: none;
-		background-size: cover;
+		background-size: cover, cover;
 		border-radius: $borderRadius;
 		display: flex;
 		flex-direction: column;
