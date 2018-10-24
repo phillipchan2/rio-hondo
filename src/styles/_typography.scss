@@ -21,10 +21,9 @@ ol {
 	position: relative;
 	z-index: 1;
 	&:hover {
-		color: #fff !important;
 		&:after {
 			transition: $transitionDefault;
-			transition-delay: .05s;
+			transition-delay: 0.05s;
 			right: -31px;
 		}
 		&:before {
@@ -42,22 +41,8 @@ ol {
 		position: absolute;
 		transition: $transitionDefault;
 		right: -25px;
-		transition-delay: .05s;
+		transition-delay: 0.05s;
 		top: 1px;
-	}
-	&:before {
-		content: '';
-		border-radius: 2px;
-		width: calc(100% + 24px);
-		height: 1.7em;
-		background: #fdc331;
-		transform: scaleX(0);
-		transform-origin: left;
-		transition: $transitionDefault;
-		position: absolute;
-		z-index: -1;
-		top: -.2em;
-		left: -8px;
 	}
 }
 
