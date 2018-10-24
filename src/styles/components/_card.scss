@@ -7,6 +7,11 @@
 
 	&.clickable {
 		color: #4b4b4b;
+		height: 330px;
+		padding-bottom: 2em;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 		transition: all 0.25s ease-in-out;
 		display: flex;
 		flex-direction: column;

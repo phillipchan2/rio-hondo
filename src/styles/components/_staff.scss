@@ -2,7 +2,7 @@
 	display: flex;
 
 	.staff-padding-container {
-		padding: 0.5em;
+		padding: 1em 1em 0 0;
 		box-sizing: border-box;
 		width: 50%;
 	}
@@ -113,18 +113,19 @@
 			padding: 1em 0 0;
 
 			.contact-info {
+				align-items: flex-end;
 				color: #fdc331;
 				display: flex;
 				font-weight: bold;
 				height: 100%;
 				justify-content: space-between;
 				left: 0;
+				opacity: 0;
 				position: absolute;
 				top: 0;
-				width: 100%;
-				opacity: 0;
-				visibility: hidden;
 				transition: $transitionDefault;
+				visibility: hidden;
+				width: 100%;
 			}
 
 			aside:hover {
