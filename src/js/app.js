@@ -3,8 +3,7 @@
 // read bio
 document.querySelectorAll('.read-bio-container').forEach(function(elem) {
 	elem.addEventListener('click', function(e) {
-		console.log('clicked');
-		var staffContainer = e.target.parentNode.parentNode.parentNode;
+		var staffContainer = e.target.closest('.staff');
 		var toggleClassName = 'read-bio-active';
 
 		if (!staffContainer.classList.contains(toggleClassName)) {
@@ -21,8 +20,7 @@ var toggleClassName = 'contact-active';
 
 document.querySelectorAll('.contact-container').forEach(function(elem) {
 	elem.addEventListener('click', function(e) {
-		console.log('contact container clicked');
-		var staffContainer = e.target.parentNode.parentNode;
+		var staffContainer = e.target.closest('.staff');
 
 		staffContainer.classList.add(toggleClassName);
 	});
