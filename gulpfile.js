@@ -46,7 +46,7 @@ gulp.task('pages', () => {
 		.pipe(
 			insert.prepend(`<!-- inject-style src="./dist/css/app.min.css" -->`)
 		)
-		.pipe(insert.prepend(`<script src="./dist/js/app.min.js"></script>`))
+		.pipe(insert.append(`<script src="./dist/js/app.min.js"></script>`))
 		.pipe(styleInject())
 		.pipe(injectScripts({ baseDir: './' }))
 		.pipe(htmlmin({ collapseWhitespace: true }))

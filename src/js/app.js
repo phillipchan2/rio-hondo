@@ -30,10 +30,7 @@ document.querySelectorAll('.contact-container').forEach(function(elem) {
 
 document.querySelectorAll('.close-contact-info').forEach(function(elem) {
 	elem.addEventListener('click', function(e) {
-		console.log('close');
 		var staffContainer = e.target.closest('.staff');
-
-		console.log(staffContainer);
 
 		staffContainer.classList.remove(toggleClassName);
 	});

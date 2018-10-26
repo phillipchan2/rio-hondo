@@ -1,3 +1,14 @@
+button {
+	background-image: linear-gradient(
+		to bottom,
+		rgba(255, 255, 255, 0.25) 0%,
+		rgba(255, 255, 255, 0) 50%,
+		rgba(0, 0, 0, 0) 51%,
+		rgba(0, 0, 0, 0.15) 100%
+	);
+	background-color: #1e73be;
+}
+
 ul {
 	margin: 0;
 	padding: 0;
