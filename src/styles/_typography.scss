@@ -86,16 +86,28 @@ ol {
 	color: #6e6e6e;
 	font-size: 40px;
 	font-weight: bold;
+	padding: 1em;
 	position: relative;
 
 	&:before {
 		content: '';
-		background: url(http://www.riohondo.edu/business/wp-content/uploads/sites/40/2018/10/big-character.png);
+		background: url(/wp-content/uploads/sites/40/2018/10/big-character.png);
 		width: 48px;
 		height: 50px;
 		position: absolute;
 		left: 0;
 		top: 0;
+	}
+
+	&:after {
+		content: '';
+		background: url(/wp-content/uploads/sites/40/2018/10/big-character.png);
+		width: 48px;
+		height: 50px;
+		position: absolute;
+		right: 30px;
+		bottom: 40px;
+		transform: scale(-1);
 	}
 }
 

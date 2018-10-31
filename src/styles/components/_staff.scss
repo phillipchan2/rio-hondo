@@ -33,6 +33,14 @@
 				top: 0;
 			}
 
+			.name {
+				color: #000;
+			}
+
+			.position {
+				color: rgba(0, 0, 0, 0.5);
+			}
+
 			.staff-bio {
 				opacity: 1;
 			}
@@ -65,9 +73,6 @@
 			}
 		}
 
-		&.full-time {
-		}
-
 		&.part-time {
 			header {
 				color: #fff;
@@ -83,6 +88,7 @@
 			z-index: 5;
 
 			.name {
+				color: #fff;
 				font-size: 19.25px;
 				line-height: 28px;
 				font-weight: bold;
@@ -90,7 +96,12 @@
 
 			.position {
 				font-size: 11px;
+				color: rgba(255, 255, 255, 0.6);
 			}
+		}
+
+		.contact-container {
+			color: #fff;
 		}
 
 		.staff-bio {
