@@ -89,6 +89,14 @@ ol {
 	padding: 1em;
 	position: relative;
 
+	&.right {
+		text-align: right;
+
+		&:after {
+			bottom: 0;
+		}
+	}
+
 	&:before {
 		content: '';
 		background: url(/wp-content/uploads/sites/40/2018/10/big-character.png);
